@@ -52,7 +52,7 @@
 						{
 							if($_POST['user_name']=='Thor' && $_POST['pwd']=='Whistler’s Mother')
 							{
-								echo "<script> window.location.assign('/hack/c01/main/index.php'); </script>";	
+								echo "<script> window.location.assign('../c01/main/index.php'); </script>";	
 							}
 							else
 							{ 

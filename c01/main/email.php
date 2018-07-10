@@ -5,6 +5,16 @@
 <script type="text/javascript" src="boost/js/bootstrap.min.js"></script>
 </head>
 <body>
+<?php
+	if(isset($_POST['sbmt']))
+	{
+		if($_POST['mail']=='december20@stalker.com')
+		{
+			echo "<script> window.open('winning.php','_TOP') </script>";	
+		}
+	}
+
+?>
 
 <div class="container-fluid">
 
@@ -14,7 +24,7 @@
  
   <div class="row">
   <div class="col-md-6">
- <form action="" method="POST">
+ <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
  	<div class="form-group">
     	<label for="mail">E-Mail</label>
         <input type="email" name="mail" class="form-control" />
