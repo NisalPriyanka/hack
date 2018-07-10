@@ -4,6 +4,7 @@
 
 <link rel="stylesheet" href="boost/css/bootstrap.min.css" type="text/css" />
 <!--<script type="text/javascript" src="boost/js/bootstrap.min.js"></script>-->
+<script type="text/javascript" src="api.js"></script>
 <style type="text/css">
 @font-face{
 	font-family:theme;
@@ -66,27 +67,13 @@
         </div>
     
     	<div class="row">
-          <div class="col-md-12"><b>Today's Quote</b> </div> 
+          <div class="col-md-12"><b>Today's Quote</b></div> 
         </div>
         <div class="row">
          <div class="col-md-4">
           <p><i>White covers a multitude of sins. <br/> [ Jonathan Milne ]</i></p>
 		   </div>
         </div>
-        
-        <script type="text/javascript">
-		
-		function genPassCode()
-		{
-			var code ="<?php echo "In order to get PassCode you have to send POST request to http://localhost/hack/c01/genCode.php"; ?>";
-			var enc = window.btoa(code);
-			console.log("Code : "+enc);
-			console.log("Hint : Code is Encrypted using Base64 format");
-		}
-	
-	</script>
-    
-    
     </div>
     
     
