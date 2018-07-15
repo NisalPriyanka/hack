@@ -36,7 +36,7 @@
         <div class="row">
         	<div class="col-md-4"></div>
          	<div class="col-md-4">
-            	<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+            	<form action="../c01/main/index.php" method="POST">
                 	<div class="form-group">
                       <label for="username">User Name</label>
                       <input type="text" name="user_name" class="form-control" />
@@ -48,7 +48,7 @@
                     
                     <input type="submit" name="sbmt" class="btn btn-dark" />
                     <?php 
-						if(isset($_POST['sbmt']))
+						/*if(isset($_POST['sbmt']))
 						{
 							if($_POST['user_name']=='Thor' && $_POST['pwd']=='Whistler’s Mother')
 							{
@@ -58,7 +58,7 @@
 							{ 
 								echo '<p style="color:red;"> Username or Password is wrong!! </p>';
 							}
-						}
+						}*/
 					?>
                     
                 </form>

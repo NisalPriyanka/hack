@@ -1,3 +1,13 @@
+<?php
+	if($_SERVER['HTTP_REFERER']== 'http://localhost/hack/c01/')
+	{ 
+		if(isset($_POST['sbmt']))
+		{
+			if($_POST['user_name']=='Thor' && $_POST['pwd']=='Whistler’s Mother')
+			{ ?>
+				
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -65,3 +75,19 @@ a:hover{
 
 </body>
 </html>
+
+<?php 
+  			}
+			else
+			{
+				echo "Passcode Wrong";
+				header('Location: http://localhost/hack/c01');
+			}	
+		}
+	}
+	else
+	{
+		header('Location: http://localhost/hack/c01');
+	}
+	
+?>
